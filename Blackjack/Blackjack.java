@@ -9,26 +9,28 @@ public class Blackjack {
         System.out.println("Do you have a knack for Black Jack?");
         System.out.println("We shall see..");
         System.out.println("..Ready? Press anything to begin!");
-        // Task 3 – Wait for the user to press enter.
+        
+        // Wait for the user to press enter.
         scan.nextLine();
-        // Task 4 – Get two random cards.
+        
+        // Get two random cards.
         int playerCard1 = drawRandomCard();
         int playerCard2 = drawRandomCard();
         String card1 = cardString(playerCard1);
         String card2 = cardString(playerCard2);
 
-        // – Print them: \n You get a \n" + <randomCard> + "\n and a \n" + <randomCard>
+        // – Print the cards.
         System.out.println("\nYou get a \n" + card1 + "\n and a \n" + card2);
 
-        // Task 5 – Print the sum of your hand value.
+        // Print the sum of your hand value.
         // – print: your total is: <hand value>
         int playerTotal = (Math.min(playerCard1, 10) + Math.min(playerCard2, 10));
         System.out.println("Your total is: " + playerTotal);
 
-        // Task 6 – Get two random cards for the dealer.
-        // – Print: The dealer shows \n" + <first card> + "\nand has a card facing down
+        // Get two random cards for the dealer.
+        // Print: The dealer shows \n" + <first card> + "\nand has a card facing down
         // \n" + <facedown card>
-        // – Print: \nThe dealer's total is hidden
+        // Print: \nThe dealer's total is hidden
         int dealerCard1 = drawRandomCard();
         int dealerCard2 = drawRandomCard();
         String card3 = cardString(dealerCard1);
@@ -38,7 +40,7 @@ public class Blackjack {
 
         System.out.println("\nThe dealer's total is hidden");
 
-        // Task 8 – Keep asking the player to hit or stay (while loop).
+        // Keep asking the player to hit or stay (while loop).
         // 1. Every time the player hits
         // – draw a new card.
         // – calculate their new total.
@@ -46,8 +48,6 @@ public class Blackjack {
         // - print: your new total is <total>
 
         // 2. Once the player stays, break the loop.
-
-        // For tasks 9 to 13, see the article: Blackjack Part II.
         String choice = hitOrStay();
         while (true) {
             if (choice.equals("hit")) {
@@ -93,7 +93,6 @@ public class Blackjack {
     }
 
     /**
-     * Task 1 – make a function that returns a random number between 1 and 13
      * Function name – drawRandomCard
      * 
      * @return (int)
@@ -109,7 +108,6 @@ public class Blackjack {
     }
 
     /**
-     * Task 2 – make a function that returns a String drawing of the card.
      * Function name – cardString
      * 
      * @param cardNumber (int)
@@ -240,7 +238,6 @@ public class Blackjack {
     }
 
     /**
-     * Task 7 – make a function that asks the user to hit or stay.
      * Function name – hitOrStay
      * 
      * @return (String)
