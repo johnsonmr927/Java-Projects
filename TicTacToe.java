@@ -8,7 +8,7 @@ public class TicTacToe {
 
     System.out.println("\nLet's play tic tac toe");
 
-    // Task 1: Create an array with three rows of '_' characters.
+    // Create an array with three rows of '_' characters.
     char[][] board = new char[3][3];
     for (int i = 0; i < board.length; i++) {
       for (int j = 0; j < board[i].length; j++) {
@@ -16,7 +16,7 @@ public class TicTacToe {
       }
     }
 
-    // Task 2: Call the function printBoard();
+    // Call the function printBoard();
     printBoard(board);
 
     for (int i = 0; i < 9; i++) {
@@ -39,18 +39,18 @@ public class TicTacToe {
     }
 
     /*
-     * { Task 3: Loop through turns.
+     * Loop through turns.
      * 
      * if (X) turn {
-     * Task 4: call askUser().
-     * Task 5: populate the board using askUser's return value.
+     * Call askUser().
+     * Populate the board using askUser's return value.
      * } else {
-     * Task 4: call askUser().
-     * Task 5: populate the board using askUser's return value. Then, print it.
+     * Call askUser().
+     * Populate the board using askUser's return value. Then, print it.
      * 
      * }
      * 
-     * Task 6 - Call the function.
+     * Call the function.
      * if return value == 3 {
      * print: X wins and break the loop
      * } else if return value == -3 {
@@ -75,7 +75,7 @@ public class TicTacToe {
   }
 
   /**
-   * Task 4 - Write a function that lets the user choose a spot
+   * Write a function that lets the user choose a spot
    * Function name – askUser
    * 
    * @param board (char[][] board)
@@ -105,7 +105,7 @@ public class TicTacToe {
   }
 
   /**
-   * Task 6 - Write a function that determines the winner
+   * Write a function that determines the winner
    * Function name - checkWin
    * 
    * @param board (char[][])
